@@ -1,26 +1,28 @@
 {
-  "name": "sample-nuxtjs",
-  "version": "1.0.0",
-  "private": true,
-  "scripts": {
-    "dev": "nuxt",
-    "build": "nuxt build",
-    "start": "nuxt start",
-    "generate": "nuxt generate"
-  },
-  "dependencies": {
-    "@nuxtjs/bulma": "^1.3.0",
-    "axios": "^0.27.2",
-    "bulma": "^0.9.4",
-    "core-js": "^3.19.3",
-    "nuxt": "^2.15.8",
-    "vue": "^2.6.14",
-    "vue-server-renderer": "^2.6.14",
-    "vue-template-compiler": "^2.6.14",
-    "webpack": "^4.46.0"
-  },
-  "devDependencies": {
-    "node-sass": "^7.0.1",
-    "sass-loader": "^13.0.2"
-  }
+    "name": "sample-nuxtjs",
+    "version": "1.0.0",
+    "private": true,
+    "scripts": {
+        "dev": "nuxt",
+        "build": "nuxt build",
+        "start": "nuxt start",
+        "generate": "nuxt generate",
+        "deploy": "nuxt generate && push-dir --dir=dist --branch=gh-pages --cleanup"
+    },
+    "dependencies": {
+        "@nuxtjs/bulma": "^1.3.0",
+        "axios": "^0.27.2",
+        "bulma": "^0.9.4",
+        "core-js": "^3.19.3",
+        "nuxt": "^2.15.8",
+        "vue": "^2.6.14",
+        "vue-server-renderer": "^2.6.14",
+        "vue-template-compiler": "^2.6.14",
+        "webpack": "^4.46.0"
+    },
+    "devDependencies": {
+        "node-sass": "^7.0.1",
+        "push-dir": "^0.4.1",
+        "sass-loader": "^13.0.2"
+    }
 }
