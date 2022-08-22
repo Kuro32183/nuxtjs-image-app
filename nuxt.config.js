@@ -34,7 +34,7 @@ export default {
   build: {},
 
   router: {
-    base: "/sample-nuxtjs/",
+    base: "/nuxtjs-image-app/",
   },
 
   generate: {
